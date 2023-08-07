@@ -6,9 +6,21 @@
     <title>Document</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
     <link rel="stylesheet" href="./style.css">
+    <title>SignUp Form</title>
 </head>
 <body>
     <h1>Mini-Webserver Standardseite.</h1>
     <p>Wenn du diesen Text im Browser als normale Webseite siehst, und zudem auch noch die Überschrift blau ist (also das Stylesheet mit geladen wird), dann hast du gerade erfolgreich deinen eigenen Webserver geschrieben. Seit stolz auf Dich!</p>
+
+    <h1>Sign Up</h1>
+    <form action="/signup" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <button type="submit">Sign Up</button>
+    </form>
 </body>
 </html>
+
+
